@@ -8,5 +8,5 @@ import { Student } from '../Student';
 })
 export class PassingComponent {
   
-  @Input() studentList: Student = new Student;
+  @Input() studentList!: Student;
 }

@@ -41,5 +41,10 @@
 <div class="container-fluid text-center">
     <h1 class="text-center">Student List</h1>
     <app-student></app-student>
+    <ul>
+        <li *ngFor="let student of studentList">
+            <h1>User Id: &nbsp; {{student.id}} -- Name{{student.name}}</h1>
+        </li>
+    </ul>
     <button class="btn btn-primary" (click)="onClick()">submit</button>
 </div>
