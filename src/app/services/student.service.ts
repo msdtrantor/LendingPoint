@@ -7,6 +7,6 @@ import { HttpClient } from '@angular/common/http'
 export class StudentService {
   constructor(private httpRequest: HttpClient) { }
    getRequst() {
-    return this.httpRequest.get('localhost:8090/student/get-all-data');
+    return this.httpRequest.get("http://localhost:8090/getAllStudents");
   }
 }
