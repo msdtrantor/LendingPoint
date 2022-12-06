@@ -8,5 +8,5 @@ import { Student } from '../Student';
 })
 export class PassingComponent {
   
-  @Input() studentList!: Student;
+  @Input() std!: Student;
 }
