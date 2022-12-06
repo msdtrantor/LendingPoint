@@ -6,7 +6,10 @@ import { HttpClient } from '@angular/common/http'
 })
 export class StudentService {
   constructor(private httpRequest: HttpClient) { }
-   getRequst() {
+  getRequst() {
     return this.httpRequest.get("http://localhost:8090/getAllStudents");
+  }
+  saveData(iData: any) {
+    return this.httpRequest.post("http://localhost:8090/save", iData);
   }
 }

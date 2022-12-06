@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StudentService } from '../services/student.service';
 
 @Component({
   selector: 'app-form-post',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-post.component.css']
 })
 export class FormPostComponent {
+  constructor(private customerService: StudentService) {
+  }
+  postFormData(iData: any) {
+    this.customerService.saveData(iData).subscribe((data) => {
 
+      console.log(data);
+    })
+    throw new Error('Method not implemented.');
+  }
 }

@@ -7,12 +7,13 @@ import { StudentService } from './services/student.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title="sfdsfdsf";
   studentList: any;
-  onClick() {
+  onClick(){
     console.log("Button is clicked !");
   }
   constructor(private studentData: StudentService) {
-    studentData.getRequst().subscribe(data => {
+    this.studentData.getRequst().subscribe(data => {
       console.log(data);
       this.studentList = data;
     })

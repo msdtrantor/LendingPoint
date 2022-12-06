@@ -7,6 +7,7 @@ import { StudentComponent } from './student/student.component';
 import { PassingComponent } from './passing/passing.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormPostComponent } from './form-post/form-post.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormPostComponent } from './form-post/form-post.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [
