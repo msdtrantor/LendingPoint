@@ -10,10 +10,9 @@ export class FormPostComponent {
   constructor(private customerService: StudentService) {
   }
   postFormData(iData: any) {
-    this.customerService.saveData(iData).subscribe((data) => {
-
-      console.log(data);
-    })
+    this.customerService.saveData(iData);
     throw new Error('Method not implemented.');
   }
+
+
 }
